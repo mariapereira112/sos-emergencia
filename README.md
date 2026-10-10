@@ -1,0 +1,141 @@
+# Projeto SOS Emergência — Front-end para VS Code
+
+Este projeto foi montado a partir da análise do APK `app-debug(1).apk` e dos requisitos da AV1 de Programação III.
+
+## O que foi identificado no APK
+- Aplicativo `com.emergency.app`.
+- Tela principal de emergência com ação SOS.
+- Cadastro de usuário.
+- Cadastro de contatos de emergência (até 5).
+- Configurações/tema, incluindo modo escuro e daltonismo.
+- Widget SOS.
+- Ações relacionadas a localização e reconhecimento de voz.
+- Mensagens de confirmação antes de enviar o SOS.
+
+O projeto web não tenta reproduzir a implementação Android. Ele recria a ideia e o fluxo como um front-end funcional.
+
+## Requisitos da AV1 contemplados
+- React + Vite
+- 3+ componentes reutilizáveis
+- useState
+- map() com key
+- React Router com 4 rotas e Link
+- SCSS com variáveis, nesting e mixin
+- Flexbox e Box Model
+- mobile-first + 2 media queries
+- JavaScript com arrays, objetos, funções, condicionais e eventos
+- Axios + useEffect + API pública
+- página institucional em Next.js + Tailwind
+- testes com Vitest/React Testing Library
+
+O PDF informa que a etapa é 100% front-end e que os dados devem vir de APIs públicas; back-end próprio fica para o Módulo 2. fileciteturn0file0L15-L18
+
+## Como executar
+
+### React
+```bash
+cd react-app
+npm install
+npm run dev
+```
+
+### Next.js
+Em outro terminal:
+```bash
+cd next-app
+npm install
+npm run dev
+```
+
+### Testes
+```bash
+cd react-app
+npm test
+```
+
+> Observação: o botão SOS é uma simulação de front-end. Ele não envia mensagens reais nem acessa localização real.
+
+### Deploy
+
+São dois projetos independentes na Vercel: um apontando para `react-app` e outro para `next-app`. Os links públicos são gerados pela Vercel depois que cada projeto for publicado.
+
+
+## Como executar
+
+-Deve ser aberto cada um em um novo terminal, react, next e a parte do backend tambem.
+
+### React
+```bash
+cd react-app
+npm install
+npm run dev
+```
+
+### Next.js
+Em outro terminal:
+```bash
+cd next-app
+npm install
+npm run dev
+```
+
+### Testes
+```bash
+cd react-app
+npm test
+```
+
+> Observação: o botão SOS é uma simulação de front-end. Ele não envia mensagens reais nem acessa localização real.
+
+### Deploy
+
+São dois projetos independentes na Vercel: um apontando para `react-app` e outro para `next-app`. Os links públicos são gerados pela Vercel depois que cada projeto for publicado.
+
+## Estrutura
+
+```text
+Projeto_SOS_FullStack/
+├── frontend/
+│   ├── react-app/
+│   └── next-app/
+├── backend/
+│   ├── package.json
+│   ├── server.js
+│   └── README.md
+└── README.md
+```
+
+## Front-end publicado
+
+## react no vercel
+https://react-app-hnxv.vercel.app/
+
+## next no vercel
+https://next-app-two-pink-22.vercel.app/
+
+## Back-end
+
+```bash
+cd backend
+npm install
+npm start
+```
+
+API local: http://localhost:3000
+
+## Endpoints
+
+`GET /api/contatos`  
+`GET /api/contatos/:id`  
+`POST /api/contatos`  
+`GET /api/usuarios`  
+`GET /api/usuarios/:id`  
+`GET /api/sos`  
+`GET /api/sos/:id`  
+`POST /api/sos`
+
+## Integrantes (nome e repositorio github)
+
+- Rafael Gonçalves da SIlva — GitHub: `https://github.com/rafaelgs117?tab=repositories`
+- Maria Janaina — GitHub: ``
+
